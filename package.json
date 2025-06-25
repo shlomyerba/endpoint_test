@@ -1,11 +1,11 @@
 {
     "name": "endpoint-demo",
     "version": "1.0.0",
-    "main": "dist-server/server.js",
+    "main": "dist-server/src/server.js",
     "scripts": {
         "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
         "build": "tsc",
-        "start": "node dist-server/server.js",
+        "start": "node dist-server/src/server.js",
         "test": "jest"
     },
     "dependencies": {
