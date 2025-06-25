@@ -2,6 +2,8 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+console.log('DB_NAME:', process.env.DB_NAME);
+
 import app from './app';
 import { sequelize } from './db';
 import './models/user.model';
