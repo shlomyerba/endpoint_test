@@ -3,7 +3,6 @@ import { User } from '../models/user.model';
 
 const router = express.Router();
 
-// GET /api/users – מחזיר את כל המשתמשים
 router.get('/', async (req, res) => {
   try {
     const users = await User.findAll();
@@ -13,7 +12,6 @@ router.get('/', async (req, res) => {
   }
 });
 
-// POST /api/users – מוסיף משתמש חדש
 router.post('/', async (req, res) => {
   try {
     const { name, email } = req.body;

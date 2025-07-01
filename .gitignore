@@ -1,4 +1,18 @@
+
+# Node
 node_modules/
 dist/
+build/
+
+# TypeScript compiled JS files
+*.js
+*.js.map
+
+# Ignore JS only in src (optional, אם לא רוצים לחסום js אחרים)
+# src/**/*.js
+
+# Logs
+*.log
+
 .env
 .DS_Store
